@@ -1,0 +1,109 @@
+@import "reset.css";
+@font-face {
+  font-family: 'MasonChronicles';
+  src: url('../fonts/MasonChronicles.woff') format('woff'), url('../fonts/MasonChronicles.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #141218;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+.header {
+  padding-top: 60px;
+  margin-bottom: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .menu-list {
+  margin-right: auto;
+  margin-left: 67px;
+}
+.header .menu-list .menu-link {
+  color: inherit;
+  text-decoration: none;
+  margin-right: 24px;
+}
+.header .menu-list .menu-link:hover {
+  text-decoration: underline;
+}
+.header .social-link {
+  margin-left: 20px;
+  text-decoration: none;
+}
+.main-content {
+  display: flex;
+  align-items: center;
+}
+.main-content .content .genre {
+  margin-bottom: 16px;
+  display: block;
+}
+.main-content .content .rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.main-content .content .rating-number {
+  font-size: 12px;
+  line-height: 14px;
+  margin-left: 9px;
+}
+.main-content .content .main-title {
+  font-family: 'MasonChronicles', serif;
+  font-weight: 500;
+  font-size: 76px;
+  line-height: 89px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.main-content .content .main-description {
+  max-width: 458px;
+  font-size: 14px;
+  line-height: 150%;
+  margin-bottom: 40px;
+}
+.main-content .content .button {
+  background: #9D2929;
+  border-radius: 8px;
+  border: none;
+  color: inherit;
+  padding: 22px 72px;
+}
+.main-content .play {
+  margin: auto;
+  background: #9D2929;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: none;
+  position: relative;
+}
+.main-content .play .play-image {
+  transform: translateX(5px);
+  position: relative;
+}
+.main-content .play::before {
+  content: '';
+  height: 132px;
+  width: 132px;
+  background: #9D2929;
+  opacity: 0.5;
+  position: absolute;
+  border-radius: 50%;
+  left: -16px;
+  top: -16px;
+}
