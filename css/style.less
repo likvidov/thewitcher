@@ -19,6 +19,13 @@ body{
     font-size: 14px;
     line-height: 16px;
     color: #FFFFFF;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-position: top right 10%;
 }
 
 .container{
@@ -57,6 +64,7 @@ body{
 .main-content{
     display: flex;
     align-items: center;
+    margin-bottom: 85px;
     .content{
         .genre{
             margin-bottom: 16px;
@@ -123,6 +131,91 @@ body{
             border-radius: 50%;
             left: -16px;
             top: -16px;
+        }
+    }
+}
+
+.swiper-container{
+    max-width: 420px;
+    margin-left: 0;
+}
+
+// slider
+.series{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    max-width: 420px;
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-right: 30px;
+        width: 164px;
+        height: 113px;
+        border-radius: 8px;
+        padding: 13px;
+
+        &-subtitle{
+            font-size: 10px;
+            line-height: 12px; 
+            margin: 0; 
+            margin-bottom: 2px;
+        }
+
+        &-title{
+            margin: 0;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+
+    .series-1{
+        background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%), url('../img/series/series1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .series-2{
+        background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%), url('../img/series/series2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .arrow{
+        width: 32px;
+        height: 23px;
+        border: none;
+        background-image: url('../img/arrow.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: transparent;
+    }
+}
+
+//footer
+.footer{
+    background-color: #141218;
+    padding: 20px 0px;
+    margin-top: 60px;
+    .footer-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .left{
+            .copyright{
+                color: #3A383D;
+            }
+        }
+        .right{
+            .footer-link{
+                margin-left: 25px;
+                text-decoration: none;
+                color: #3A383D;
+            }
         }
     }
 }
