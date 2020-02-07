@@ -93,14 +93,19 @@ main {
   margin-bottom: 40px;
 }
 .main-content .content .button {
+  display: inline-block;
   background: #9D2929;
   border-radius: 8px;
   border: none;
   color: inherit;
   font-size: 14px;
   padding: 22px 72px;
+  text-decoration: none;
 }
 .main-content .play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   background: #9D2929;
   height: 100px;
